@@ -12,7 +12,7 @@ plt.ylabel('Frequences')
 
 plt.grid(axis='y')
 
-plt.show()
+#plt.show()
 
 def letter_occurrences_percentage(input_string):
 
@@ -33,17 +33,26 @@ def letter_occurrences_percentage(input_string):
 
 input_string = "This is a long string with repeated letters in to see the percentage of each letter that is written. A longer sentence is probably better"
 percentages = letter_occurrences_percentage(input_string)
-#print(percentages)
 
 second_values = [percentages.get(letter, 0) for letter in letters] 
 
-plt.figure(figsize=(10, 5)) 
-plt.bar(letters, second_values, color='orange')
+#plt.figure(figsize=(10, 5)) 
+#plt.bar(letters, second_values, color='orange')
+
+x = np.arange(len(letters))
+
+width = 0.4  # the width of the bars
+plt.figure(figsize=(12, 6))
+plt.bar(x - width/2, values, width, color='blue', label='Expected Frequencies')
+plt.bar(x + width/2, second_values, width, color='red', label='Sample frequencies')
+
 
 plt.title('Letter Frequencies from Input String')
 plt.xlabel('Letters')
 plt.ylabel('Frequencies (%)')
 plt.grid(axis='y')
+
+plt.legend()
 
 # Show the second plot
 plt.show()
