@@ -33,11 +33,7 @@ def letter_occurrences_percentage(input_string):
 
 input_string = "This is a long string with repeated letters in to see the percentage of each letter that is written. A longer sentence is probably better"
 percentages = letter_occurrences_percentage(input_string)
-print(percentages)
-
-input_string = "This is a long string with repeated letters in to see the percentage of each letter that is written. A longer sentence is probably better"
-percentages = letter_occurrences_percentage(input_string)
-print(percentages)
+#print(percentages)
 
 second_values = [percentages.get(letter, 0) for letter in letters] 
 
