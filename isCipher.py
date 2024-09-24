@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 letters = [chr(i) for i in range(ord('a'), ord('z') + 1)]  
-values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+values = [8.2, 1.5, 2.8, 4.3, 12.7, 2.2, 2.0, 6.1, 7.0, 0.15, 0.77, 4.0, 2.4, 6.7, 7.5, 1.9, 0.095, 6.0, 6.3, 9.1, 2.8, 0.98, 2.4, 0.15, 2.0, 0.074]
 
 
 plt.bar(letters, values, color='blue')
